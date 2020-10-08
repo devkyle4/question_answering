@@ -2,7 +2,11 @@
 FROM python:3.11
 
 # Set the working directory in the container
+<<<<<<< HEAD
 WORKDIR /app
+=======
+WORKDIR /docker/app
+>>>>>>> 64867dc687955fb8f564e534cb7554897c83ad8c
 
 # Copy the requirements file into the container
 COPY requirements.txt /app/requirements.txt
@@ -11,7 +15,11 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copy the content of the app directory into the container
+<<<<<<< HEAD
 COPY ./app/ /app
+=======
+COPY .. /app
+>>>>>>> 64867dc687955fb8f564e534cb7554897c83ad8c
 
 
 # Expose the Flask port
@@ -21,7 +29,11 @@ ENV DATABASE_URL='devkyle'
 ENV PASSWORD=123456
 
 # Run the Flask app
+<<<<<<< HEAD
 CMD ["python", "app.py"]
+=======
+CMD ["python", "/app/app.py"]
+>>>>>>> 64867dc687955fb8f564e534cb7554897c83ad8c
 
 
 
