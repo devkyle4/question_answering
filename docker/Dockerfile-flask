@@ -1,0 +1,28 @@
+# Use an official Python runtime as the base image
+FROM python:3.11
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the requirements file into the container
+COPY requirements.txt /app/requirements.txt
+
+# Install dependencies
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy the content of the app directory into the container
+COPY ./app/ /app
+
+
+# Expose the Flask port
+EXPOSE 5000
+
+ENV DATABASE_URL='devkyle'
+ENV PASSWORD=123456
+
+# Run the Flask app
+CMD ["python", "app.py"]
+
+
+
+
