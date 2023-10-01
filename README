@@ -2,3 +2,7 @@ You pass your question in the url bar in this format:
 http://localhost:port/ask?question=q%20q%20q%20q%20q%20q%20q?
 
 q = a word of your question
+
+I Have had problems creating a docker container so far
+
+And I am still working on the project to make it work perfectly
