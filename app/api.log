@@ -1,0 +1,82 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug:172.20.10.4 - - [30/Sep/2023 22:45:24] "[31m[1mGET /ask HTTP/1.1[0m" 405 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug:172.20.10.4 - - [30/Sep/2023 22:49:31] "[31m[1mGET /ask HTTP/1.1[0m" 405 -
+INFO:werkzeug:172.20.10.4 - - [30/Sep/2023 22:55:29] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:09:56] "[31m[1mGET /ask HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:11:03] "[31m[1mGET /ask HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:13:13] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:13:20] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:13:27] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:13:28] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:14:06] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:14:10] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:14:35] "[31m[1mGET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/passages/_search [status:200 duration:0.309s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:15:13] "GET /ask?question=What%20is%20the%20meaning%20of%20life? HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/passages/_search [status:200 duration:0.019s]
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 23:16:13] "GET /ask?question=What%20is%20the%20name%20of%20the%20plaintiff? HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162

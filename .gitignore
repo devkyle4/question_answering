@@ -1,0 +1,15 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+
+# Ignore log files
+logs/
+
+docs/
+
+app/config.py
+
+venv
+myenv
