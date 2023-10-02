@@ -58,9 +58,9 @@ def index_data_from_csv(filepath):
         helpers.bulk(es, actions)
 
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-file_dir = os.path.join(current_dir, '..', 'docs')
-file_path = os.path.join(current_dir, file_dir, 'passage_metadata_emb.csv')
+# current_dir = os.path.dirname(os.path.abspath(__file__))
+# file_dir = os.path.join(current_dir, '..', 'docs')
+# file_path = os.path.join(current_dir, file_dir, 'passage_metadata_emb.csv')
 
 # create_index(INDEX_NAME, mapping)
 # index_data_from_csv(file_path)

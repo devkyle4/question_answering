@@ -1,4 +1,6 @@
 import csv
+import os.path
+
 from indexing import es, INDEX_NAME
 from sentence_transformers import SentenceTransformer
 
@@ -32,7 +34,7 @@ def retrieve_relevant_passages(question_embedding, size=3):
     return response['hits']['hits']
 
 
-# SAVING QUESTION AND REPLY TO A CSV FILE
+# SAVING QUESTION AND ANSWER TO A CSV FILE
 def save_to_csv(question, filename="../docs/questions_answers.csv"):
     with open(filename, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
@@ -52,6 +54,37 @@ def save_to_csv(question, filename="../docs/questions_answers.csv"):
         writer.writerow(row)
 
 
-QUESTION = 'What is the name of the plaintiff?'
+# CODE FOR EVALUATION
+def evaluation(user_queries):
+    if os.path.splitext(user_queries)[1].lower() != '.txt':  # checking if file is a text file
+        return "Wrong file format! Only .txt allowed"
+    with open(user_queries, 'r', newline='', encoding='utf-8') as file:
+        questions = [line.strip() for line in file]
+
+    # SAVING THE EVALUATION IN evaluation.csv
+    with open('../docs/evaluation.csv', 'w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+
+        writer.writerow([' Question', 'Passage 1', 'Relevance Score 1',
+                         'Passage 1 Metadata', 'Is Passage 1 Relevant? (Yes/No)',
+                         'Passage 2', 'Relevance Score 2', 'Passage 2 Metadata',
+                         'Is Passage 2 Relevant? (Yes/No)', 'Passage 3',
+                         'Relevance Score 3', 'Passage 3 Metadata', 'Is Passage 3 Relevant? (Yes/No)'])
+        exit()
+        for question in questions:
+            question_embedding = compute_question_embedding(question)
+            results = retrieve_relevant_passages(question_embedding)
+            row = [question]
+            for hit in results:
+                passage = hit['_source']['Passage']
+                score = hit['_score']
+                metadata = hit['_source']['Metadata']
+                row.extend([passage, score, metadata])
+            writer.writerow(row)
+
+
+evaluation('../docs/user_queries.txt')
+
+# QUESTION = 'What is the name of the plaintiff?'
 # QUESTION_EMB = compute_question_embedding(QUESTION)
-print(save_to_csv(QUESTION))
+# print(save_to_csv(QUESTION))
