@@ -52,7 +52,6 @@ def save_to_csv(question, filename="../docs/questions_answers.csv"):
         writer.writerow(row)
 
 
-
 QUESTION = 'What is the name of the plaintiff?'
 # QUESTION_EMB = compute_question_embedding(QUESTION)
 print(save_to_csv(QUESTION))
