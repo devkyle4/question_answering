@@ -4,7 +4,7 @@ import csv
 
 es = Elasticsearch(
     hosts=[{'host': 'localhost', 'port': 9200, 'scheme': 'http'}],
-    basic_auth=('devkyle', '123456')
+    basic_auth=(username, password)
 )
 
 INDEX_NAME = 'legal_passages'
