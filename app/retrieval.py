@@ -62,7 +62,7 @@ def evaluation(user_queries):
         questions = [line.strip() for line in file]
 
     # SAVING THE EVALUATION IN evaluation.csv
-    with open('../docs/evaluation.csv', 'w', newline='', encoding='utf-8') as file:
+    with open('../docs/evaluation_rated.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
 
         writer.writerow([' Question', 'Passage 1', 'Relevance Score 1',
@@ -70,7 +70,6 @@ def evaluation(user_queries):
                          'Passage 2', 'Relevance Score 2', 'Passage 2 Metadata',
                          'Is Passage 2 Relevant? (Yes/No)', 'Passage 3',
                          'Relevance Score 3', 'Passage 3 Metadata', 'Is Passage 3 Relevant? (Yes/No)'])
-        exit()
         for question in questions:
             question_embedding = compute_question_embedding(question)
             results = retrieve_relevant_passages(question_embedding)
