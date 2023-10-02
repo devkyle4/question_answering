@@ -80,3 +80,7 @@ INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloa
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 849-758-162
+INFO:werkzeug: * Detected change in 'D:\\question_answering\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 849-758-162

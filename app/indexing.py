@@ -7,7 +7,7 @@ es = Elasticsearch(
     basic_auth=('devkyle', '123456')
 )
 
-INDEX_NAME = 'passages'
+INDEX_NAME = 'legal_passages'
 
 # Define the mapping
 mapping = {
@@ -35,8 +35,8 @@ def create_index(index_name, the_mapping):
 
 
 # Storing data from CSV file to ElasticSearch
-
 def index_data_from_csv(filepath):
+    # filepath = path to csv file of the passage, metadata and embeddings
     with open(filepath, 'r', encoding='utf-8') as file:
         reader = csv.reader(file)
         next(reader)

@@ -1,6 +1,7 @@
 import csv
 import os.path
 from sentence_transformers import SentenceTransformer
+from parsing import CHUNKS, METADATA
 import json
 
 
@@ -23,4 +24,4 @@ def passage_emb(chunks, metadata):
         writer.writerow(['Passage', 'Metadata', 'Embedding'])
         writer.writerows(output_data)
 
-    return embeddings
+    return ""

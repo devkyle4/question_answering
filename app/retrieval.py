@@ -51,3 +51,8 @@ def save_to_csv(questions, filename="../docs/questions_answers.csv"):
                 metadata = hit['_source']['Metadata']
                 row.extend([passage, score, metadata])
             writer.writerow(row)
+
+
+QUESTION = 'What is the name of the plaintiff?'
+QUESTION_EMB = compute_question_embedding(QUESTION)
+retrieve_relevant_passages(QUESTION_EMB)

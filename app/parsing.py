@@ -2,7 +2,6 @@ import re
 import csv
 import os
 import json
-from model import passage_emb
 
 
 # EXTRACTING PASSAGES FROM THE CORPUS DIRECTORY
@@ -47,9 +46,9 @@ def extract_metadata(filepath):
     return metadata
 
 
-def main(meta, chunks):
+def save_passage_metadata(meta, chnks):
     output = []
-    for chunk in chunks:
+    for chunk in chnks:
         output.append((chunk, json.dumps(meta)))
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -67,10 +66,7 @@ def main(meta, chunks):
     return ''
 
 
-# file_path = os.path.join("..", "docs", "Corpus", "kwame-legal-EL-1680770407105_")
-# get_passage = extract_passages(file_path)
-# get_metadata = extract_metadata(file_path)
-# passage_chunks = split_passages_into_chunks(get_passage)
-
-# if __name__ == "__main__":
-#     main(get_metadata, passage_chunks)
+FILE_NAME = '../docs/Corpus/kwame-legal-EL-1680770407105_'
+PASSAGES = extract_passages(FILE_NAME)
+METADATA = extract_metadata(FILE_NAME)
+CHUNKS = split_passages_into_chunks(PASSAGES)
