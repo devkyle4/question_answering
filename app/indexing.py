@@ -4,7 +4,7 @@ import csv
 
 es = Elasticsearch(
     hosts=[{'host': 'localhost', 'port': 9200, 'scheme': 'http'}],
-    basic_auth=(username, password)
+    basic_auth=('devkyle', '123456')
 )
 
 INDEX_NAME = 'legal_passages'
@@ -62,5 +62,5 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 file_dir = os.path.join(current_dir, '..', 'docs')
 file_path = os.path.join(current_dir, file_dir, 'passage_metadata_emb.csv')
 
-create_index(INDEX_NAME, mapping)
-index_data_from_csv(file_path)
+# create_index(INDEX_NAME, mapping)
+# index_data_from_csv(file_path)
