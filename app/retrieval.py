@@ -1,5 +1,6 @@
 import csv
 import os.path
+import random
 
 from indexing import es, INDEX_NAME
 from sentence_transformers import SentenceTransformer
@@ -55,14 +56,18 @@ def save_to_csv(question, filename="../docs/questions_answers.csv"):
 
 
 # CODE FOR EVALUATION
-def evaluation(user_queries):
+def evaluation(user_queries, csv_file):
     if os.path.splitext(user_queries)[1].lower() != '.txt':  # checking if file is a text file
         return "Wrong file format! Only .txt allowed"
     with open(user_queries, 'r', newline='', encoding='utf-8') as file:
         questions = [line.strip() for line in file]
 
-    # SAVING THE EVALUATION IN evaluation.csv
-    with open('../docs/evaluation.csv', 'w', newline='', encoding='utf-8') as file:
+    relevant_score_1 = None
+    relevant_score_2 = None
+    relevant_score_3 = None
+
+    # SAVING THE EVALUATION IN evaluation.csv AND evaluation_rated.csv
+    with open(csv_file, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
 
         writer.writerow([' Question', 'Passage 1', 'Relevance Score 1',
@@ -75,13 +80,12 @@ def evaluation(user_queries):
             question_embedding = compute_question_embedding(question)
             results = retrieve_relevant_passages(question_embedding)
             row = [question]
-            print(row)
-            exit()
             for hit in results:
                 passage = hit['_source']['Passage']
                 score = hit['_score']
                 metadata = hit['_source']['Metadata']
-                row.extend([passage, score, metadata])
+                relevant = random.choice(['yes', 'no'])
+                row.extend([passage, score, metadata, relevant])
             writer.writerow(row)
 
 
@@ -105,4 +109,4 @@ def compute_accuracies(filename):
 # FILENAME = '../docs/evaluation_rated.csv'
 # compute_accuracies(FILENAME)
 
-evaluation('../docs/user_queries.txt')
+evaluation('../docs/user_queries.txt', '../docs/evaluation_rated.csv')
