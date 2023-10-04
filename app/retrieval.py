@@ -65,7 +65,8 @@ def evaluation(user_queries, csv_file):
     relevant_score_1 = None
     relevant_score_2 = None
     relevant_score_3 = None
-
+    if os.path.exists(csv_file):
+        return 'can\'t create a duplicate file'
     # SAVING THE EVALUATION IN evaluation.csv AND evaluation_rated.csv
     with open(csv_file, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
@@ -95,18 +96,32 @@ def compute_accuracies(filename):
         reader = csv.reader(file)
         next(reader)
 
-        relevant_count_top1 = 0
-        relevant_count_top3 = 0
+        relevant_count = 0
         total_queries = 0
 
         for row in reader:
-            print(row[4])
-            exit()
+            if row[4].lower() == 'yes':
+                relevant_count += 1
+            if row[8].lower() == 'yes':
+                relevant_count += 1
+            if row[12].lower() == 'yes':
+                relevant_count += 1
 
-    return ' '
+        top1_accuracy = (relevant_count // 1) * 100
+        top3_accuracy = (relevant_count // 3) * 100
+
+    performance_path = '../docs/performance.csv'
+    if os.path.exists(performance_path):
+        return 'file already exists'
+    with open(performance_path, 'w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Top 1 Accuracy', 'Top 3 Accuracy'])
+        writer.writerow([top1_accuracy, top3_accuracy])
+
+    return top1_accuracy, top3_accuracy
 
 
-# FILENAME = '../docs/evaluation_rated.csv'
-# compute_accuracies(FILENAME)
+FILENAME = '../docs/evaluation_rated.csv'
+compute_accuracies(FILENAME)
 
-evaluation('../docs/user_queries.txt', '../docs/evaluation_rated.csv')
+# print(evaluation('../docs/user_queries.txt', FILENAME))
