@@ -1,10 +1,13 @@
 import os.path
 from elasticsearch import Elasticsearch, helpers
+from dotenv import load_dotenv
 import csv
+
+load_dotenv()
 
 es = Elasticsearch(
     hosts=[{'host': 'localhost', 'port': 9200, 'scheme': 'http'}],
-    basic_auth=('devkyle', '123456')
+    basic_auth=(os.environ.get('USERNAME'), os.environ.get('PASSWORD'))
 )
 
 INDEX_NAME = 'legal_passages'
