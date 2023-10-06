@@ -7,7 +7,7 @@ load_dotenv()
 
 es = Elasticsearch(
     hosts=[{'host': 'localhost', 'port': 9200, 'scheme': 'http'}],
-    basic_auth=(os.environ.get('USERNAME'), os.environ.get('PASSWORD'))
+    basic_auth=('devkyle', '123456')
 )
 
 INDEX_NAME = 'legal_passages'

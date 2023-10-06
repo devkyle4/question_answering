@@ -1,7 +1,6 @@
 import csv
 import os.path
 import random
-
 from indexing import es, INDEX_NAME
 from sentence_transformers import SentenceTransformer
 
@@ -121,7 +120,8 @@ def compute_accuracies(filename):
     return top1_accuracy, top3_accuracy
 
 
-FILENAME = '../docs/evaluation_rated.csv'
-compute_accuracies(FILENAME)
+# FILENAME = '../docs/evaluation_rated.csv'
+# # docs/evaluation_rated.csv
+# print(compute_accuracies(FILENAME))
 
 # print(evaluation('../docs/user_queries.txt', FILENAME))
