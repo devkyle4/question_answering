@@ -10,7 +10,6 @@ logs/
 docs/Corpus
 docs/Corpus-20230928T140604Z-001.zip
 
-app/config.py
 
 .env
 venv

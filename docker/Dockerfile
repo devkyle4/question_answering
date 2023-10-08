@@ -13,8 +13,6 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 # Copy the 'app' directory contents into the container at /app
 COPY ./app /app
 
-# Make port 5000 available to the world outside this container (for Flask)
-EXPOSE 5000
 
 # In Dockerfile
 ENV DATABASE_URL='devkyle'

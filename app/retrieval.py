@@ -6,14 +6,17 @@ from sentence_transformers import SentenceTransformer
 
 
 #   TAKES QUESTIONS AS INPUT AND CHANGE INTO AN EMBEDDING
-def compute_question_embedding(question):
-    model = SentenceTransformer('all-mpnet-base-v2')
-    question_embedding = model.encode(question)
-    return question_embedding
+# def compute_question_embedding(question):
+#     model = SentenceTransformer('all-mpnet-base-v2')
+#     question_embedding = model.encode(question)
+#     return question_embedding
 
 
 #   RETRIEVING PASSAGES FROM ELASTICSEARCH INDEX
-def retrieve_relevant_passages(question_embedding, size=3):
+def document_retrieval(question, size=3):
+    model = SentenceTransformer('all-mpnet-base-v2')
+    question_embedding = model.encode(question)
+
     query = {
         "size": size,
         "query": {
@@ -43,8 +46,7 @@ def save_to_csv(question, filename="../docs/questions_answers.csv"):
                          'Passage 2', 'Relevance Score 2', 'Passage 2 Metadata',
                          'Passage 3', 'Relevance Score 3', 'Passage 3 Metadata'])
 
-        question_embedding = compute_question_embedding(question)
-        results = retrieve_relevant_passages(question_embedding)
+        results = document_retrieval(question)
         row = [question]
         for hit in results:
             passage = hit['_source']['Passage']
@@ -77,8 +79,7 @@ def evaluation(user_queries, csv_file):
                          'Relevance Score 3', 'Passage 3 Metadata', 'Is Passage 3 Relevant? (Yes/No)'])
 
         for question in questions:
-            question_embedding = compute_question_embedding(question)
-            results = retrieve_relevant_passages(question_embedding)
+            results = document_retrieval(question)
             row = [question]
             for hit in results:
                 passage = hit['_source']['Passage']
@@ -123,5 +124,5 @@ def compute_accuracies(filename):
 # FILENAME = '../docs/evaluation_rated.csv'
 # # docs/evaluation_rated.csv
 # print(compute_accuracies(FILENAME))
-
+# print(document_retrieval('what is the name of the plaintiff?'))
 # print(evaluation('../docs/user_queries.txt', FILENAME))

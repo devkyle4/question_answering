@@ -1,10 +1,10 @@
 from indexing import create_index, INDEX_NAME, index_data_from_csv
-from retrieval import compute_question_embedding, save_to_csv, retrieve_relevant_passages
+from retrieval import save_to_csv, document_retrieval
 from config import DevelopmentConfig, ProductionConfig, TestingConfig
 from flask import Flask, request, jsonify, abort, render_template_string
+from flask_limiter import Limiter
 import os
 import logging
-
 
 # Initialize the app
 app = Flask(__name__)
@@ -23,18 +23,22 @@ else:
 logging.basicConfig(filename='api.log', level=logging.DEBUG)
 logger = logging.getLogger()
 
+# SETTING RATE LIMIT OF REQUESTS
+limiter = Limiter(
+    app,
+    default_limits=["50 per day", "50 per hour", "10 per minute"]
+)
 
-@app.route('/ask', methods=['GET'])
+
+@app.route('/', methods=['POST'])
 def get_question():
-    question = request.args.get('question')
+    data = request.json
+    question = data.get('question')
     if not question:
-        return "Please provide a question with the 'question' query parameter.", 400
-
-    # Get the embedding of the question
-    question_embedding = compute_question_embedding(question)
+        return jsonify({"error": "No question provided"}), 400
 
     # Fetch relevant passages
-    results = retrieve_relevant_passages(question_embedding)
+    results = document_retrieval(question)
 
     # Extract the most relevant passage (you can customize this as needed)
     if results:
@@ -42,15 +46,7 @@ def get_question():
     else:
         top_result = "No relevant passage found for your question."
 
-    # Render the result in a simple HTML response
-    template = """
-    <h2>Your Question:</h2>
-    <p>{{ question }}</p>
-    <h2>Answer:</h2>
-    <p>{{ answer }}</p>
-    """
-
-    return render_template_string(template, question=question, answer=top_result)
+    return jsonify({"answer": top_result})
 
 
 @app.route('/ask', methods=['POST'])
@@ -62,8 +58,7 @@ def ask_question():
         abort(400, description="Invalid request. Please send a question.")
 
     question = data['question']
-    question_embedding = compute_question_embedding(question)
-    results = retrieve_relevant_passages(question_embedding)
+    results = document_retrieval(question)
 
     response = {
         "question": question,
@@ -82,4 +77,4 @@ def ask_question():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=8080, debug=False)
