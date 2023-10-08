@@ -7,10 +7,8 @@ import json
 # EXTRACTING PASSAGES FROM THE CORPUS DIRECTORY
 def extract_passages(filepath):
     filename = filepath + 'Technical.txt'
-
     with open(filename, "r", encoding='utf-8') as file:
         content = file.read()
-
     # Extracting passages
     match = re.search(r'(?<=__section__).*', content, re.DOTALL)
     if match:
@@ -40,7 +38,6 @@ def split_passages_into_chunks(passage):
 
 def extract_metadata(filepath):
     metadata_file = filepath + 'Metadata.json'
-
     with open(metadata_file, 'r', encoding='utf-8') as file:
         metadata = json.load(file)
     return metadata

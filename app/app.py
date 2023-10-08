@@ -43,37 +43,26 @@ def get_question():
     # Extract the most relevant passage (you can customize this as needed)
     if results:
         top_result = results[0]['_source']['Passage']
+        score = results[0]['_score']
     else:
         top_result = "No relevant passage found for your question."
+        score = "No relevant score"
 
-    return jsonify({"answer": top_result})
+    return jsonify({"answer": top_result, "score": score})
 
 
-@app.route('/ask', methods=['POST'])
-def ask_question():
-    data = request.get_json('what is the name of the plaintiff?')
+@app.route('/index', methods=['POST'])
+def index_documents():
+    text_file = request.files.get('text_file')
+    metadata_file = request.files.get('metadata_file')
 
-    # Request validation
-    if not data or 'question' not in data:
-        abort(400, description="Invalid request. Please send a question.")
+    if not text_file or not metadata_file:
+        return jsonify({"error": "Both text and metadata files are required"}), 400
 
-    question = data['question']
-    results = document_retrieval(question)
+    if text_file.content_type != "text" or metadata_file.content_type != "application/json":
+        return jsonify({"error": "File format unsupported"})
 
-    response = {
-        "question": question,
-        "answers": [
-            {
-                "passage": hit['_source']['Passage'],
-                "score": hit['_score'],
-                "metadata": hit['_source']['Metadata']
-            }
-            for hit in results
-        ]
-    }
-    logger.info(f"Question: {question}, Results: {response}")
-
-    return jsonify(response), 200
+    return ''
 
 
 if __name__ == "__main__":

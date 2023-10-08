@@ -124,5 +124,5 @@ def compute_accuracies(filename):
 # FILENAME = '../docs/evaluation_rated.csv'
 # # docs/evaluation_rated.csv
 # print(compute_accuracies(FILENAME))
-# print(document_retrieval('what is the name of the plaintiff?'))
+print(document_retrieval('what is the name of the plaintiff?'))
 # print(evaluation('../docs/user_queries.txt', FILENAME))
