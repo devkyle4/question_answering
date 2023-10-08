@@ -35,10 +35,13 @@ mapping = {
 def create_index(index_name, the_mapping):
     if not es.indices.exists(index=index_name):
         es.indices.create(index=index_name, body=the_mapping)
+    else:
+        print('Index already created!!')
 
 
 # Storing data from CSV file to ElasticSearch
 def index_data_from_csv(filepath):
+
     # filepath = path to csv file of the passage, metadata and embeddings
     with open(filepath, 'r', encoding='utf-8') as file:
         reader = csv.reader(file)

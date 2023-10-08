@@ -91,3 +91,453 @@ INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
 DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
 INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.343s]
 INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 13:51:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:38:18] "[31m[1mGET / HTTP/1.1[0m" 405 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.046s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:41:37] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.017s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:41:39] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.024s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:00] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.027s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:17] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:23] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.023s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:24] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.017s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:26] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.021s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:36] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:46] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.023s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:50] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.018s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:48:37] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:48:49] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 63, in index_documents
+    passages = extract_passages(text_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 9, in extract_passages
+    content = uploaded_file.getvalue().decode('utf-8')
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'getvalue'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:22:07] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    passages = extract_passages(text_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 9, in extract_passages
+    content = uploaded_file.getvalue().decode('utf-8')
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'getvalue'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:26:43] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:28:27] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:01] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:26] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:47] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 38, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:31:26] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:32:49] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:33:16] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:34:35] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:39:56] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:41:19] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:44:36] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:45:00] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:46:43] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:50:02] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:50:55] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:52:56] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:56:52] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:57:37] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:59:37] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:00:00] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:02:20] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:04:29] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:08:23] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:11:22] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.862s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:26:08] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.036s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:45:34] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.058s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:59:11] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.328s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:02:34] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.030s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:04:03] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.114s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:09:39] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.034s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:09:40] "POST / HTTP/1.1" 200 -

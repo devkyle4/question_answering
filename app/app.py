@@ -1,7 +1,9 @@
-from indexing import create_index, INDEX_NAME, index_data_from_csv
+from model import passage_emb
+from indexing import create_index, index_data_from_csv, mapping
 from retrieval import save_to_csv, document_retrieval
 from config import DevelopmentConfig, ProductionConfig, TestingConfig
-from flask import Flask, request, jsonify, abort, render_template_string
+from parsing import extract_metadata, extract_passages, split_passages_into_chunks, save_passage_metadata
+from flask import Flask, request, jsonify
 from flask_limiter import Limiter
 import os
 import logging
@@ -53,13 +55,29 @@ def get_question():
 
 @app.route('/index', methods=['POST'])
 def index_documents():
-    text_file = request.files.get('text_file')
-    metadata_file = request.files.get('metadata_file')
+    try:
 
-    if not text_file or not metadata_file:
-        return jsonify({"error": "Both text and metadata files are required"}), 400
+        text_file = request.files.get('text_file')
+        metadata_file = request.files.get('metadata_file')
 
-    return ''
+        text_content = text_file.read().decode('utf-8') if text_file else None
+        metadata_content = metadata_file.read().decode('utf-8') if metadata_file else None
+
+        passages = extract_passages(text_content)
+        metadata = extract_metadata(metadata_content)
+        chunks = split_passages_into_chunks(passages)
+        passage_metadata_csv = save_passage_metadata(metadata, chunks)
+        passage_emb_path = passage_emb(chunks, metadata)
+
+        # CREATING INDEX
+        create_index('legal_passages', mapping)
+        index_data_from_csv(passage_emb_path)
+
+        return jsonify({"message": "Successfully indexed and saved as csv file!"}), 200
+
+    except Exception as e:
+        logger.error(f"Error during indexing: {e}")
+        return jsonify({"error": "An error occurred during indexing."}), 500
 
 
 if __name__ == "__main__":

@@ -5,12 +5,9 @@ import json
 
 
 # EXTRACTING PASSAGES FROM THE CORPUS DIRECTORY
-def extract_passages(filepath):
-    filename = filepath + 'Technical.txt'
-    with open(filename, "r", encoding='utf-8') as file:
-        content = file.read()
+def extract_passages(uploaded_file):
     # Extracting passages
-    match = re.search(r'(?<=__section__).*', content, re.DOTALL)
+    match = re.search(r'(?<=__section__).*', uploaded_file, re.DOTALL)
     if match:
         sections = match.group().strip()
     else:
@@ -28,7 +25,6 @@ def extract_passages(filepath):
 def split_passages_into_chunks(passage):
     chunks = []
     chunk_length = len(passage) // 5
-    # print(chunk_length)
     for i in range(5):
         start_idx = i * chunk_length
         end_idx = (i + 1) * chunk_length if i != 4 else len(passage)
@@ -36,34 +32,36 @@ def split_passages_into_chunks(passage):
     return chunks
 
 
-def extract_metadata(filepath):
-    metadata_file = filepath + 'Metadata.json'
-    with open(metadata_file, 'r', encoding='utf-8') as file:
-        metadata = json.load(file)
+def extract_metadata(uploaded_metadata):
+    metadata = json.loads(uploaded_metadata)
     return metadata
 
 
-def save_passage_metadata(meta, chnks):
+def save_passage_metadata(meta, passage_chunks):
     output = []
-    for chunk in chnks:
+    for chunk in passage_chunks:
         output.append((chunk, json.dumps(meta)))
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(current_dir, "..", "docs")
-    output_path = os.path.join(output_dir, "passage_metadata.csv")
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+
+    # Append numbers to filenames if the name already exists
+    base_name = 'passage_metadata_emb'
+    extension = '.csv'
+    counter = 1
+    output_path = os.path.join(output_dir, base_name + extension)
+
+    # Check if file exists and modify filename if it does
+    while os.path.exists(output_path):
+        output_path = os.path.join(output_dir, f"{base_name}_{counter}{extension}")
+        counter += 1
 
     with open(output_path, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Passage', 'Metadata'])
         writer.writerows(output)
 
-    return ''
-
-
-FILE_NAME = '../docs/Corpus/kwame-legal-EL-1680770407105_'
-PASSAGES = extract_passages(FILE_NAME)
-METADATA = extract_metadata(FILE_NAME)
-CHUNKS = split_passages_into_chunks(PASSAGES)
+    return output_path
