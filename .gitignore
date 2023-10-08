@@ -2,15 +2,9 @@
 *.pyc
 
 # Ignore virtual environment directories
-venv/
-
-# Ignore log files
-logs/
 
 docs/Corpus
 docs/Corpus-20230928T140604Z-001.zip
 
 
-.env
-venv
-qa_env
+

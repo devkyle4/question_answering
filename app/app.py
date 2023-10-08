@@ -59,9 +59,6 @@ def index_documents():
     if not text_file or not metadata_file:
         return jsonify({"error": "Both text and metadata files are required"}), 400
 
-    if text_file.content_type != "text" or metadata_file.content_type != "application/json":
-        return jsonify({"error": "File format unsupported"})
-
     return ''
 
 

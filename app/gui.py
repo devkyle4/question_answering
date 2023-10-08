@@ -4,31 +4,35 @@ import requests
 st.title('Legal Case Question Answering App')
 
 # Document Upload for Indexing
-uploaded_text_file = st.file_uploader("Choose files you'd like to index", accept_multiple_files=True)
-uploaded_metadata_file = st.file_uploader("Choose the corresponding metadata JSON file", type=["json"])
+uploaded_files = st.file_uploader("Upload both text and corresponding metadata file", accept_multiple_files=True)
 
-# Check for unsupported formats
-if uploaded_text_file and uploaded_text_file.type != "text/plain":
-    st.write("The uploaded text file format is not supported. Please upload a .txt file.")
-if uploaded_metadata_file and uploaded_metadata_file.type != "application/json":
-    st.write("The uploaded metadata file format is not supported. Please upload a .json file.")
+# Filter out text and metadata files
+uploaded_text_files = [f for f in uploaded_files if f.type == "text/plain"]
+uploaded_metadata_files = [f for f in uploaded_files if f.type == "application/json"]
+
+# Checking if there's any unsupported file format
+unsupported_files = [f for f in uploaded_files if f.type not in ["text/plain", "application/json"]]
+for f in unsupported_files:
+    st.write(f"The file {f.name} has an unsupported format. Please upload .txt or .json files.")
 
 # Indexing After Pressing Confirmation button
 if st.button("Index Files"):
-    if not uploaded_text_file or not uploaded_metadata_file:
+    if not uploaded_text_files or not uploaded_metadata_files:
         st.write("Both text and metadata files need to be uploaded before indexing!")
     else:
-        files = {
-            "text_file": uploaded_text_file.getvalue(),
-            "metadata_file": uploaded_metadata_file.getvalue()
-        }
-        response = requests.post('http://localhost:8080/index', files=files)
+        # Assuming you're sending both as files in the request
+        response = requests.post(
+            'http://localhost:8080/index',
+            files={
+                "text_file": uploaded_text_files[0].getvalue(),
+                "metadata_file": uploaded_metadata_files[0].getvalue()
+            }
+        )
 
         if response.status_code == 200:
             st.write("Successfully indexed the uploaded files!")
         else:
             st.write(f"Failed to index. Reason: {response.text}")
-
 
 # Input textbox for the question
 question = st.text_input('Enter your question:', '')
