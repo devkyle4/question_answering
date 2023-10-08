@@ -4,6 +4,15 @@ FROM python:3.11
 # Set the working directory in the container
 WORKDIR /app
 
+
+# Install supervisord
+RUN dpkg-reconfigure tzdata && \
+    apt-get update && apt-get install -y supervisor && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    mkdir -p /var/log/supervisor && \
+    chown -R nobody:nogroup /var/log/supervisor
+
 # Copy the current directory (which should be /app in the context of the Dockerfile) into the container at /app
 COPY ../requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
@@ -11,9 +20,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application into the container
 COPY .. /app/
 
-# Install supervisord
-RUN apt-get update && apt-get install -y supervisor
-
+# Set permissions for nobody
+RUN chown -R nobody:nogroup /app && \
+    chmod -R 755 /app
+    
 # Copy supervisord config file
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
@@ -21,7 +31,7 @@ COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 5000 8501
 
 # Run supervisord when the container launches
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
 
 
@@ -57,22 +67,3 @@ CMD ["/usr/bin/supervisord"]
 
 
 
-# # Set the working directory in the container to /app
-# WORKDIR /app
-
-# # Copy the requirements file into the container at /app
-# COPY ../requirements.txt /app/
-
-# # Install any needed packages specified in requirements.txt
-# RUN pip install --no-cache-dir -r /app/requirements.txt
-
-# # Copy the 'app' directory contents into the container at /app
-# COPY ./app /app
-
-
-# # In Dockerfile
-# ENV DATABASE_URL='devkyle'
-# ENV PASSWORD=123456
-
-# # Run app.py when the container launches
-# CMD ["python", "/app/app.py"]
