@@ -11,9 +11,7 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copy the content of the app directory into the container
-COPY ./app/ /app
-
-COPY .. /app
+ADD ../app/  /app
 
 
 # Expose the Flask port
@@ -23,7 +21,7 @@ ENV DATABASE_URL='devkyle'
 ENV PASSWORD=123456
 
 # Run the Flask app
-CMD ["python", "/app/app.py"]
+CMD ["python", "app.py"]
 
 
 
