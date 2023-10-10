@@ -1,0 +1,768 @@
+INFO:app:App started successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 10:38:50] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 10:38:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 10:39:15] "[31m[1mGET /ask HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 10:39:35] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:App started successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:App started successfully!
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 11:33:33] "[31m[1mGET / HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 11:35:29] "[33mPOST /ask HTTP/1.1[0m" 404 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:9200
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.966s]
+INFO:root:Question: What is the name of the plaintiff, Results: {'question': 'What is the name of the plaintiff', 'answers': [{'passage': 'JUDGMENT\nR.C. OWUSU, JA:\nThis is an appeal against the Judgment of His Lordship Nana Barfour Adjei (Chairman) sitting with Messrs Eric Wood and George Amissah, Miss Cobbah-Yalley and Florence Dadzie as panel members delivered on 15/11/2001 at the Regional Tribunal Cape Coast.\nThe appellant herein had been charge on two counts of careless driving contrary to Sec. 18(1) of R.T.O. 55/52 as amended by section 4 of Act 553 of 1998 and Negligently causing Harm contrary to section 72 of the Criminal Code of 1960 (Act 29).\nHe was arraigned before the Community Tribunal, Elmina in the Central Region, tried and found guilty on both Counts. He was convicted on both counts and sentenced to a fine of \ufffd200,000.00 or 4 months I.H.L in default. He paid the fine.\nDissatisfied with the conviction and sentence however, he appealed to the Regional Tribunal, Cape Coast on the grounds that:\ni. “The Judgment is not supported by the evidence on record.\nii. The trial Court Erred in holding that the point of impact was in the lane of traffic of PW1.\niii. The trial court failed to appreciate the defence of the Accused.\niv. The trial court failed to adequately evaluate the evidence on record.\nv. The trial court failed to consider the fact that the 3rd party by driving into the lane of the Accused at a short distance placed the Accused in extreme peril and that which the Accused did or omitted to do in the agony of the moment cannot fairly be treated as negligence.\nvi. The reasons adduced by the trial court for the rejection of the evidence of Dw1 are untenable in law.\nvii. The trial court erred palpably in holding that the duty of avoidance of collision was on the Accused and not the third party vehicle which was doing the overtaking.\nviii. The court failed to appreciate the burden of proof placed on the prosecution and thereby erroneously shifted that burden onto the accused to prove his innocence.\nix. The trial court failed to consider the issues raised in the address submitted by counsel on behalf of the accused.\nx. Additional grounds of appeal will be filed upon receipt of the record of appeal.\nHis appeal was disallowed by the Regional Tribunal. It is against the decision of the Regional Tribunal that he has appealed to this court on the grounds that:—\n1\\. “ The tribunal failed to critically evaluate the evidence.\n2\\. The tribunal Erred in dismissing the Appeal.\n3\\. The tribunal Erred in holding that the appellant was negligent.\n4\\. The finding by the tribunal that the Appellant was confused and panicky and this caused the accident is not borne out by the evidence on record.\n5\\. The Judgment was erroneous and not the result of proper resolution of the facts in issue since the tribunal failed to consider the several facts which were in favour of the appellant and which were suf', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ficient to exonerate him from the charge.\nThe facts of the case as alleged by the prosecution are that on 18/1/2001 at about 7.15 p.m, the appellant herein, Joseph Donkor of Union Transport Africa Ltd, Takoradi drove Scania Cement Articulated Tanker No. GT 7086 A loaded with cement from Takoradi to Acheampong near Tarkwa. Between Bronyibima and Yesumkwa along Cape Coast-Takoradi Road, accused drove into the lane of an on coming Mercedes Benz Car No. GW 2686 Q then being driven by one Michael Hackenberg, General Manager Construction pioneers (CP) and hit the Benz car which caught fire and burnt completely.\nOne Doctor Spark who was with the driver on the Mercedes Benz sustained injuries. According to PW1, who was driving the Mercedes Benz Car, the Appellant tried to avoid hitting him in his lane so he swerved into his (Appellant’s) lane again but the Trailer of his truck fell down and hit his car in his lane.\nThe fact that the Articulated Truck was driven into the lane of the Mercedes Benz was denied by the defence which contended that it was rather the driver of the Mercedes Benz who drove into the lane of the Truck.\nCounsel for the Appellant at the hearing of the appeal, abandoned ground 2 of the appeal.\nGrounds 1, 3 and 5 were argued together. Counsel submitted that the findings made by the court cannot be supported by the evidence.\nThe Appellate tribunal dismissed the Appellant’s appeal because, as the Judgment of the Tribunal reads “We cannot agree more with the lower court in its observation above. We therefore hold that the trial court was right in its Judgment and we have no just cause to disturb it, the findings made by the trial court were supported by the evidence.”\nThe trial court had found the appellant “negligent and careless”. That “he refused to keep a proper look out and in his own words, he never saw PW1’s Benz Car”.\nCounsel had seriously argued before this court that the appellant was not careless and that what he did when confronted with imminent danger was reasonably necessary in the circumstances and cannot amount to negligence.\nHe referred the Court to the case of ASIBI (HAUSA) VRS FRANCIS EFFAH, Court of Appeal, Civil Appeal NO. 33/69 of 26th February 1970 (unreported) referred to by P. K. Twumasi in his Criminal Law in Ghana p. 606.\nCounsel submitted that the appellant was faced with imminent danger of running into the Toyota Land Cruiser which had overtaken another vehicle and had found itself in his lane. He applied his brakes to avoid fatalities.\nAccording to the appellant himself this was when he got out of a curve. The legal position is that where a person is confronted with an emergency he cannot be expected to conduct himself in a way a reasonable and prudent man would do in ordinary Circumstances. His blameworthiness must ', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'be Judged by the peculiar and unusual situation.\nSee the case of LONDON PASSENGER TRANSPORT BOARD VRS. UPSON \\[1949\\] A.C. 155, referred to in Twumasi’s Criminal Law in Ghana p.606.\nAttached to this principle is a rider that where, however, the emergency was created by an earlier act of negligence by the person concerned he cannot escape liability for the consequences of the situation he created by his own negligent act. So in this case, was the situation in which the appellant found himself brought about by an earlier act of carelessness on his part?\nAccording to the appellant himself, he had finished negotiating a curve on the road. The accident had happened late in the evening, about 7.15 p.m. and visibility was poor. PW2 told the trial court that he could not take measurements that night because of visibility.\nFrom the sketch of the scene of accident, Exh “A”, the distance between where the appellant sighted vehicle No 2686Q to the point of impact measured 205”. The appellant did sign the sketch by way of approval in the presence of an independent witness. At the trial, even though he did not object to the tendering of the sketch in evidence, he denied that the point of impact as indicated on the sketch was the actual point of impact. He told the Court the point of impact was in his lane of traffic but not in the lane of traffic of PW1 as indicated on the sketch.\nHis denial per se, did not render the sketch inadmissible as contended by Counsel in the trial court. The appellant did not raise any objection to the tendering of the statement. Even if he had raised an objection, its admissibility like a confession statement would have been decided on evidence only where the appellant had denied signing the sketch or that he had signed under duress. Where the objection is raised on the ground of inaccuracy, it must first be admitted before it can be evaluated. The weight to be attached to it is a question of fact. See the case of ASARE alias FANTI VRS THE STATE \\[1964\\] GLR 70. The appellant did not object to the distance between where he sighted PW1’s vehicle and where the two vehicles collided whether in his lane of traffic or that of the other vehicle.\nAs to the lane of traffic in which the vehicle collided, the appellant in his own statement told the police it was in PW1’s lane. This was the statement taken a day after the accident. 10 days later, on 29/3/2001 when given the opportunity to make another statement, he relied on his former statement made on 19/3/2001. Counsel urged it upon this court not to attach any weight to the statement because the appellant was remanded in custody and had been denied medical care on the day of the accident and that the statement was taken the next morning.\nI find this submission strange because one would have thoug', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ht that having slept over night, the Appellant rather would have reflected on the events leading to the accident and would remember correctly how and where the accident happened. If what he had told the police in that statement was not correct, he had another opportunity on which he could have changed same.\nLike the sketch, the statement was tendered without objection and the contents were not denied. The weight to be attached to it was a question of fact for the trial court. I therefore see no reason why this court should be called upon not to attach any weight to it, a duty reserved for the trial court which had evaluated the statement.\nUnder Cross-examination, the Appellant was asked the following questions:\nQ. “What time after the accident did you make your statement to the police”.\nA. “After the Police went to take measurement the next day."\nQ. “so the statement you gave the police and what you are saying now, which one is correct?"\nA. “what I am saying now is correct.”\nQ. “so what ever you told the police is not correct, it is a lie, I mean your statement?”\nA. “I spoke the truth to the police.”\nHe did not at the trial say that he pointed at a different point of impact which the investigating officer had ignored in the sketch.\nThe Appellant’s vehicle was a Scania Cement Bulk Tanker which at the time of the accident was loaded with cement. With the size of the vehicle and the load, the Appellant was under a duty to exercise a greater degree of care and attention a prudent and reasonable driver would do especially while negotiating a curve. If he had driven his vehicle with due care and attention required of him, he could have avoided the accident from the distance of 205 feet from where he first sighted the Mercedes Benz Car.\nAt a speed of 97 k.m.p.h., under the High way Code, a driver should be able to brake from a distance of 180", from where he first sights an on coming vehicle ….\nEven driving at that speed would not be reasonable under the circumstances having regard to the size of the vehicle with the load, that portion of the road where the accident happened and the time of the day. I am very mindful of the fact that speed per se is not evidence of carelessness or negligence but from the appellant’s own evidence, when he applied his brake, he lost control of it and his vehicle started swerving from one lane to the other.\nAccording to the report of the officer in charge of Vehicle Examination and Licensing Department who tested the Appellant’s vehicle after the accident, the brakes, steering and the Electrical Systems were in good working order prior to the accident.\nThe position in which the appellant found himself was not the result of a Mechanical fault. The evidence does not indicate that the road was slippery at the time.\nCounsel for the A', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ppellant urged it upon this court that the point of impact is not a determining factor in deciding the issue of carelessness.\nRather, the position of the law is that the point of impact alone, was not a proper yardstick for resolving issues of road traffic negligence, see HAUSA VS. THE REPUBLIC \\[1981\\] GLR 840 Twumasi J. (as he then was) in his book Criminal Law in Ghana p. 615 on police sketch of scene of accident, mentions the point of impact as one of the important positions for determining liability for negligent driving.\nThe trial court held that, it was a crucial factor in the determination of the case before it and found that the point of impact was in the lane of traffic of PW1.\nThe Appellant therefore is to be blamed for driving into the lane of traffic of PW1 as there is no clear evidence that PW1 who was in his lane, had ample means and opportunity to prevent the accident.\nThe case of OWUSU VRS. COMMISSIONER OF POLICE \\[1963\\] 1 GLR p.113 is rather not in favour of the Appellant.\nUnder Cross-examination, he told the court that he did not even see PW1’s Car ahead of him. In his statement he said he saw a vehicle overtaking PW1’s Car ahead of him. Where he cannot even be sure whether he saw PW1’s Car or not, one can safely say that the Appellant did not drive his vehicle with due care and attention.\nThe Appellate Tribunal evaluated the evidence on record and came to the conclusion that the findings made by the trial Tribunal are supported by the evidence. This court cannot therefore disturb that finding.\nIndeed in this appeal the Chief State Attorney submitted that the Judgment of the Regional Tribunal is supported by the record and called upon the Court to dismiss the appeal.\nI will not agree with counsel for the Appellant that the Judgment of the Regional Tribunal is erroneous as same is not based on proper evaluation and resolution of the facts in issues.\nThe finding that the Appellant became confused and panicky, and that this caused the accident, I must admit is not borne out by the evidence.\nIn this appeal, counsel for the Appellant said nothing about the second count of Negligently causing Harm, which flows directly from the first count. Its fate depends upon the success or failure of the conviction against the first count as a result of which the person named in the charge sheet in the second count sustained the injury.\nHaving found that the Appellant drove his vehicle without due care and attention, he must be held liable for Negligently causing Harm to the person named in the second count.\nOn the totality of the evidence, the appeal against conviction fails and same is hereby dismissed.\nR. C. OWUSU (MS)\nJUSTICE OF APPEAL\nWOOD, JA:\nI agree.\nG. T. WOOD (MRS.)\nJUSTICE OF APPEAL\nGBADEGBE, JA:\nI also agree.\nN. S. GBADEGBE\nJUSTICE OF APPEAL', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}]}
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 11:36:16] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.166s]
+INFO:root:Question: What is the name of the plaintiff, Results: {'question': 'What is the name of the plaintiff', 'answers': [{'passage': 'JUDGMENT\nR.C. OWUSU, JA:\nThis is an appeal against the Judgment of His Lordship Nana Barfour Adjei (Chairman) sitting with Messrs Eric Wood and George Amissah, Miss Cobbah-Yalley and Florence Dadzie as panel members delivered on 15/11/2001 at the Regional Tribunal Cape Coast.\nThe appellant herein had been charge on two counts of careless driving contrary to Sec. 18(1) of R.T.O. 55/52 as amended by section 4 of Act 553 of 1998 and Negligently causing Harm contrary to section 72 of the Criminal Code of 1960 (Act 29).\nHe was arraigned before the Community Tribunal, Elmina in the Central Region, tried and found guilty on both Counts. He was convicted on both counts and sentenced to a fine of \ufffd200,000.00 or 4 months I.H.L in default. He paid the fine.\nDissatisfied with the conviction and sentence however, he appealed to the Regional Tribunal, Cape Coast on the grounds that:\ni. “The Judgment is not supported by the evidence on record.\nii. The trial Court Erred in holding that the point of impact was in the lane of traffic of PW1.\niii. The trial court failed to appreciate the defence of the Accused.\niv. The trial court failed to adequately evaluate the evidence on record.\nv. The trial court failed to consider the fact that the 3rd party by driving into the lane of the Accused at a short distance placed the Accused in extreme peril and that which the Accused did or omitted to do in the agony of the moment cannot fairly be treated as negligence.\nvi. The reasons adduced by the trial court for the rejection of the evidence of Dw1 are untenable in law.\nvii. The trial court erred palpably in holding that the duty of avoidance of collision was on the Accused and not the third party vehicle which was doing the overtaking.\nviii. The court failed to appreciate the burden of proof placed on the prosecution and thereby erroneously shifted that burden onto the accused to prove his innocence.\nix. The trial court failed to consider the issues raised in the address submitted by counsel on behalf of the accused.\nx. Additional grounds of appeal will be filed upon receipt of the record of appeal.\nHis appeal was disallowed by the Regional Tribunal. It is against the decision of the Regional Tribunal that he has appealed to this court on the grounds that:—\n1\\. “ The tribunal failed to critically evaluate the evidence.\n2\\. The tribunal Erred in dismissing the Appeal.\n3\\. The tribunal Erred in holding that the appellant was negligent.\n4\\. The finding by the tribunal that the Appellant was confused and panicky and this caused the accident is not borne out by the evidence on record.\n5\\. The Judgment was erroneous and not the result of proper resolution of the facts in issue since the tribunal failed to consider the several facts which were in favour of the appellant and which were suf', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ficient to exonerate him from the charge.\nThe facts of the case as alleged by the prosecution are that on 18/1/2001 at about 7.15 p.m, the appellant herein, Joseph Donkor of Union Transport Africa Ltd, Takoradi drove Scania Cement Articulated Tanker No. GT 7086 A loaded with cement from Takoradi to Acheampong near Tarkwa. Between Bronyibima and Yesumkwa along Cape Coast-Takoradi Road, accused drove into the lane of an on coming Mercedes Benz Car No. GW 2686 Q then being driven by one Michael Hackenberg, General Manager Construction pioneers (CP) and hit the Benz car which caught fire and burnt completely.\nOne Doctor Spark who was with the driver on the Mercedes Benz sustained injuries. According to PW1, who was driving the Mercedes Benz Car, the Appellant tried to avoid hitting him in his lane so he swerved into his (Appellant’s) lane again but the Trailer of his truck fell down and hit his car in his lane.\nThe fact that the Articulated Truck was driven into the lane of the Mercedes Benz was denied by the defence which contended that it was rather the driver of the Mercedes Benz who drove into the lane of the Truck.\nCounsel for the Appellant at the hearing of the appeal, abandoned ground 2 of the appeal.\nGrounds 1, 3 and 5 were argued together. Counsel submitted that the findings made by the court cannot be supported by the evidence.\nThe Appellate tribunal dismissed the Appellant’s appeal because, as the Judgment of the Tribunal reads “We cannot agree more with the lower court in its observation above. We therefore hold that the trial court was right in its Judgment and we have no just cause to disturb it, the findings made by the trial court were supported by the evidence.”\nThe trial court had found the appellant “negligent and careless”. That “he refused to keep a proper look out and in his own words, he never saw PW1’s Benz Car”.\nCounsel had seriously argued before this court that the appellant was not careless and that what he did when confronted with imminent danger was reasonably necessary in the circumstances and cannot amount to negligence.\nHe referred the Court to the case of ASIBI (HAUSA) VRS FRANCIS EFFAH, Court of Appeal, Civil Appeal NO. 33/69 of 26th February 1970 (unreported) referred to by P. K. Twumasi in his Criminal Law in Ghana p. 606.\nCounsel submitted that the appellant was faced with imminent danger of running into the Toyota Land Cruiser which had overtaken another vehicle and had found itself in his lane. He applied his brakes to avoid fatalities.\nAccording to the appellant himself this was when he got out of a curve. The legal position is that where a person is confronted with an emergency he cannot be expected to conduct himself in a way a reasonable and prudent man would do in ordinary Circumstances. His blameworthiness must ', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'be Judged by the peculiar and unusual situation.\nSee the case of LONDON PASSENGER TRANSPORT BOARD VRS. UPSON \\[1949\\] A.C. 155, referred to in Twumasi’s Criminal Law in Ghana p.606.\nAttached to this principle is a rider that where, however, the emergency was created by an earlier act of negligence by the person concerned he cannot escape liability for the consequences of the situation he created by his own negligent act. So in this case, was the situation in which the appellant found himself brought about by an earlier act of carelessness on his part?\nAccording to the appellant himself, he had finished negotiating a curve on the road. The accident had happened late in the evening, about 7.15 p.m. and visibility was poor. PW2 told the trial court that he could not take measurements that night because of visibility.\nFrom the sketch of the scene of accident, Exh “A”, the distance between where the appellant sighted vehicle No 2686Q to the point of impact measured 205”. The appellant did sign the sketch by way of approval in the presence of an independent witness. At the trial, even though he did not object to the tendering of the sketch in evidence, he denied that the point of impact as indicated on the sketch was the actual point of impact. He told the Court the point of impact was in his lane of traffic but not in the lane of traffic of PW1 as indicated on the sketch.\nHis denial per se, did not render the sketch inadmissible as contended by Counsel in the trial court. The appellant did not raise any objection to the tendering of the statement. Even if he had raised an objection, its admissibility like a confession statement would have been decided on evidence only where the appellant had denied signing the sketch or that he had signed under duress. Where the objection is raised on the ground of inaccuracy, it must first be admitted before it can be evaluated. The weight to be attached to it is a question of fact. See the case of ASARE alias FANTI VRS THE STATE \\[1964\\] GLR 70. The appellant did not object to the distance between where he sighted PW1’s vehicle and where the two vehicles collided whether in his lane of traffic or that of the other vehicle.\nAs to the lane of traffic in which the vehicle collided, the appellant in his own statement told the police it was in PW1’s lane. This was the statement taken a day after the accident. 10 days later, on 29/3/2001 when given the opportunity to make another statement, he relied on his former statement made on 19/3/2001. Counsel urged it upon this court not to attach any weight to the statement because the appellant was remanded in custody and had been denied medical care on the day of the accident and that the statement was taken the next morning.\nI find this submission strange because one would have thoug', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ht that having slept over night, the Appellant rather would have reflected on the events leading to the accident and would remember correctly how and where the accident happened. If what he had told the police in that statement was not correct, he had another opportunity on which he could have changed same.\nLike the sketch, the statement was tendered without objection and the contents were not denied. The weight to be attached to it was a question of fact for the trial court. I therefore see no reason why this court should be called upon not to attach any weight to it, a duty reserved for the trial court which had evaluated the statement.\nUnder Cross-examination, the Appellant was asked the following questions:\nQ. “What time after the accident did you make your statement to the police”.\nA. “After the Police went to take measurement the next day."\nQ. “so the statement you gave the police and what you are saying now, which one is correct?"\nA. “what I am saying now is correct.”\nQ. “so what ever you told the police is not correct, it is a lie, I mean your statement?”\nA. “I spoke the truth to the police.”\nHe did not at the trial say that he pointed at a different point of impact which the investigating officer had ignored in the sketch.\nThe Appellant’s vehicle was a Scania Cement Bulk Tanker which at the time of the accident was loaded with cement. With the size of the vehicle and the load, the Appellant was under a duty to exercise a greater degree of care and attention a prudent and reasonable driver would do especially while negotiating a curve. If he had driven his vehicle with due care and attention required of him, he could have avoided the accident from the distance of 205 feet from where he first sighted the Mercedes Benz Car.\nAt a speed of 97 k.m.p.h., under the High way Code, a driver should be able to brake from a distance of 180", from where he first sights an on coming vehicle ….\nEven driving at that speed would not be reasonable under the circumstances having regard to the size of the vehicle with the load, that portion of the road where the accident happened and the time of the day. I am very mindful of the fact that speed per se is not evidence of carelessness or negligence but from the appellant’s own evidence, when he applied his brake, he lost control of it and his vehicle started swerving from one lane to the other.\nAccording to the report of the officer in charge of Vehicle Examination and Licensing Department who tested the Appellant’s vehicle after the accident, the brakes, steering and the Electrical Systems were in good working order prior to the accident.\nThe position in which the appellant found himself was not the result of a Mechanical fault. The evidence does not indicate that the road was slippery at the time.\nCounsel for the A', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ppellant urged it upon this court that the point of impact is not a determining factor in deciding the issue of carelessness.\nRather, the position of the law is that the point of impact alone, was not a proper yardstick for resolving issues of road traffic negligence, see HAUSA VS. THE REPUBLIC \\[1981\\] GLR 840 Twumasi J. (as he then was) in his book Criminal Law in Ghana p. 615 on police sketch of scene of accident, mentions the point of impact as one of the important positions for determining liability for negligent driving.\nThe trial court held that, it was a crucial factor in the determination of the case before it and found that the point of impact was in the lane of traffic of PW1.\nThe Appellant therefore is to be blamed for driving into the lane of traffic of PW1 as there is no clear evidence that PW1 who was in his lane, had ample means and opportunity to prevent the accident.\nThe case of OWUSU VRS. COMMISSIONER OF POLICE \\[1963\\] 1 GLR p.113 is rather not in favour of the Appellant.\nUnder Cross-examination, he told the court that he did not even see PW1’s Car ahead of him. In his statement he said he saw a vehicle overtaking PW1’s Car ahead of him. Where he cannot even be sure whether he saw PW1’s Car or not, one can safely say that the Appellant did not drive his vehicle with due care and attention.\nThe Appellate Tribunal evaluated the evidence on record and came to the conclusion that the findings made by the trial Tribunal are supported by the evidence. This court cannot therefore disturb that finding.\nIndeed in this appeal the Chief State Attorney submitted that the Judgment of the Regional Tribunal is supported by the record and called upon the Court to dismiss the appeal.\nI will not agree with counsel for the Appellant that the Judgment of the Regional Tribunal is erroneous as same is not based on proper evaluation and resolution of the facts in issues.\nThe finding that the Appellant became confused and panicky, and that this caused the accident, I must admit is not borne out by the evidence.\nIn this appeal, counsel for the Appellant said nothing about the second count of Negligently causing Harm, which flows directly from the first count. Its fate depends upon the success or failure of the conviction against the first count as a result of which the person named in the charge sheet in the second count sustained the injury.\nHaving found that the Appellant drove his vehicle without due care and attention, he must be held liable for Negligently causing Harm to the person named in the second count.\nOn the totality of the evidence, the appeal against conviction fails and same is hereby dismissed.\nR. C. OWUSU (MS)\nJUSTICE OF APPEAL\nWOOD, JA:\nI agree.\nG. T. WOOD (MRS.)\nJUSTICE OF APPEAL\nGBADEGBE, JA:\nI also agree.\nN. S. GBADEGBE\nJUSTICE OF APPEAL', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}]}
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 11:57:13] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.157s]
+INFO:root:Question: What is the name of the plaintiff, Results: {'question': 'What is the name of the plaintiff', 'answers': [{'passage': 'JUDGMENT\nR.C. OWUSU, JA:\nThis is an appeal against the Judgment of His Lordship Nana Barfour Adjei (Chairman) sitting with Messrs Eric Wood and George Amissah, Miss Cobbah-Yalley and Florence Dadzie as panel members delivered on 15/11/2001 at the Regional Tribunal Cape Coast.\nThe appellant herein had been charge on two counts of careless driving contrary to Sec. 18(1) of R.T.O. 55/52 as amended by section 4 of Act 553 of 1998 and Negligently causing Harm contrary to section 72 of the Criminal Code of 1960 (Act 29).\nHe was arraigned before the Community Tribunal, Elmina in the Central Region, tried and found guilty on both Counts. He was convicted on both counts and sentenced to a fine of \ufffd200,000.00 or 4 months I.H.L in default. He paid the fine.\nDissatisfied with the conviction and sentence however, he appealed to the Regional Tribunal, Cape Coast on the grounds that:\ni. “The Judgment is not supported by the evidence on record.\nii. The trial Court Erred in holding that the point of impact was in the lane of traffic of PW1.\niii. The trial court failed to appreciate the defence of the Accused.\niv. The trial court failed to adequately evaluate the evidence on record.\nv. The trial court failed to consider the fact that the 3rd party by driving into the lane of the Accused at a short distance placed the Accused in extreme peril and that which the Accused did or omitted to do in the agony of the moment cannot fairly be treated as negligence.\nvi. The reasons adduced by the trial court for the rejection of the evidence of Dw1 are untenable in law.\nvii. The trial court erred palpably in holding that the duty of avoidance of collision was on the Accused and not the third party vehicle which was doing the overtaking.\nviii. The court failed to appreciate the burden of proof placed on the prosecution and thereby erroneously shifted that burden onto the accused to prove his innocence.\nix. The trial court failed to consider the issues raised in the address submitted by counsel on behalf of the accused.\nx. Additional grounds of appeal will be filed upon receipt of the record of appeal.\nHis appeal was disallowed by the Regional Tribunal. It is against the decision of the Regional Tribunal that he has appealed to this court on the grounds that:—\n1\\. “ The tribunal failed to critically evaluate the evidence.\n2\\. The tribunal Erred in dismissing the Appeal.\n3\\. The tribunal Erred in holding that the appellant was negligent.\n4\\. The finding by the tribunal that the Appellant was confused and panicky and this caused the accident is not borne out by the evidence on record.\n5\\. The Judgment was erroneous and not the result of proper resolution of the facts in issue since the tribunal failed to consider the several facts which were in favour of the appellant and which were suf', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ficient to exonerate him from the charge.\nThe facts of the case as alleged by the prosecution are that on 18/1/2001 at about 7.15 p.m, the appellant herein, Joseph Donkor of Union Transport Africa Ltd, Takoradi drove Scania Cement Articulated Tanker No. GT 7086 A loaded with cement from Takoradi to Acheampong near Tarkwa. Between Bronyibima and Yesumkwa along Cape Coast-Takoradi Road, accused drove into the lane of an on coming Mercedes Benz Car No. GW 2686 Q then being driven by one Michael Hackenberg, General Manager Construction pioneers (CP) and hit the Benz car which caught fire and burnt completely.\nOne Doctor Spark who was with the driver on the Mercedes Benz sustained injuries. According to PW1, who was driving the Mercedes Benz Car, the Appellant tried to avoid hitting him in his lane so he swerved into his (Appellant’s) lane again but the Trailer of his truck fell down and hit his car in his lane.\nThe fact that the Articulated Truck was driven into the lane of the Mercedes Benz was denied by the defence which contended that it was rather the driver of the Mercedes Benz who drove into the lane of the Truck.\nCounsel for the Appellant at the hearing of the appeal, abandoned ground 2 of the appeal.\nGrounds 1, 3 and 5 were argued together. Counsel submitted that the findings made by the court cannot be supported by the evidence.\nThe Appellate tribunal dismissed the Appellant’s appeal because, as the Judgment of the Tribunal reads “We cannot agree more with the lower court in its observation above. We therefore hold that the trial court was right in its Judgment and we have no just cause to disturb it, the findings made by the trial court were supported by the evidence.”\nThe trial court had found the appellant “negligent and careless”. That “he refused to keep a proper look out and in his own words, he never saw PW1’s Benz Car”.\nCounsel had seriously argued before this court that the appellant was not careless and that what he did when confronted with imminent danger was reasonably necessary in the circumstances and cannot amount to negligence.\nHe referred the Court to the case of ASIBI (HAUSA) VRS FRANCIS EFFAH, Court of Appeal, Civil Appeal NO. 33/69 of 26th February 1970 (unreported) referred to by P. K. Twumasi in his Criminal Law in Ghana p. 606.\nCounsel submitted that the appellant was faced with imminent danger of running into the Toyota Land Cruiser which had overtaken another vehicle and had found itself in his lane. He applied his brakes to avoid fatalities.\nAccording to the appellant himself this was when he got out of a curve. The legal position is that where a person is confronted with an emergency he cannot be expected to conduct himself in a way a reasonable and prudent man would do in ordinary Circumstances. His blameworthiness must ', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'be Judged by the peculiar and unusual situation.\nSee the case of LONDON PASSENGER TRANSPORT BOARD VRS. UPSON \\[1949\\] A.C. 155, referred to in Twumasi’s Criminal Law in Ghana p.606.\nAttached to this principle is a rider that where, however, the emergency was created by an earlier act of negligence by the person concerned he cannot escape liability for the consequences of the situation he created by his own negligent act. So in this case, was the situation in which the appellant found himself brought about by an earlier act of carelessness on his part?\nAccording to the appellant himself, he had finished negotiating a curve on the road. The accident had happened late in the evening, about 7.15 p.m. and visibility was poor. PW2 told the trial court that he could not take measurements that night because of visibility.\nFrom the sketch of the scene of accident, Exh “A”, the distance between where the appellant sighted vehicle No 2686Q to the point of impact measured 205”. The appellant did sign the sketch by way of approval in the presence of an independent witness. At the trial, even though he did not object to the tendering of the sketch in evidence, he denied that the point of impact as indicated on the sketch was the actual point of impact. He told the Court the point of impact was in his lane of traffic but not in the lane of traffic of PW1 as indicated on the sketch.\nHis denial per se, did not render the sketch inadmissible as contended by Counsel in the trial court. The appellant did not raise any objection to the tendering of the statement. Even if he had raised an objection, its admissibility like a confession statement would have been decided on evidence only where the appellant had denied signing the sketch or that he had signed under duress. Where the objection is raised on the ground of inaccuracy, it must first be admitted before it can be evaluated. The weight to be attached to it is a question of fact. See the case of ASARE alias FANTI VRS THE STATE \\[1964\\] GLR 70. The appellant did not object to the distance between where he sighted PW1’s vehicle and where the two vehicles collided whether in his lane of traffic or that of the other vehicle.\nAs to the lane of traffic in which the vehicle collided, the appellant in his own statement told the police it was in PW1’s lane. This was the statement taken a day after the accident. 10 days later, on 29/3/2001 when given the opportunity to make another statement, he relied on his former statement made on 19/3/2001. Counsel urged it upon this court not to attach any weight to the statement because the appellant was remanded in custody and had been denied medical care on the day of the accident and that the statement was taken the next morning.\nI find this submission strange because one would have thoug', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ht that having slept over night, the Appellant rather would have reflected on the events leading to the accident and would remember correctly how and where the accident happened. If what he had told the police in that statement was not correct, he had another opportunity on which he could have changed same.\nLike the sketch, the statement was tendered without objection and the contents were not denied. The weight to be attached to it was a question of fact for the trial court. I therefore see no reason why this court should be called upon not to attach any weight to it, a duty reserved for the trial court which had evaluated the statement.\nUnder Cross-examination, the Appellant was asked the following questions:\nQ. “What time after the accident did you make your statement to the police”.\nA. “After the Police went to take measurement the next day."\nQ. “so the statement you gave the police and what you are saying now, which one is correct?"\nA. “what I am saying now is correct.”\nQ. “so what ever you told the police is not correct, it is a lie, I mean your statement?”\nA. “I spoke the truth to the police.”\nHe did not at the trial say that he pointed at a different point of impact which the investigating officer had ignored in the sketch.\nThe Appellant’s vehicle was a Scania Cement Bulk Tanker which at the time of the accident was loaded with cement. With the size of the vehicle and the load, the Appellant was under a duty to exercise a greater degree of care and attention a prudent and reasonable driver would do especially while negotiating a curve. If he had driven his vehicle with due care and attention required of him, he could have avoided the accident from the distance of 205 feet from where he first sighted the Mercedes Benz Car.\nAt a speed of 97 k.m.p.h., under the High way Code, a driver should be able to brake from a distance of 180", from where he first sights an on coming vehicle ….\nEven driving at that speed would not be reasonable under the circumstances having regard to the size of the vehicle with the load, that portion of the road where the accident happened and the time of the day. I am very mindful of the fact that speed per se is not evidence of carelessness or negligence but from the appellant’s own evidence, when he applied his brake, he lost control of it and his vehicle started swerving from one lane to the other.\nAccording to the report of the officer in charge of Vehicle Examination and Licensing Department who tested the Appellant’s vehicle after the accident, the brakes, steering and the Electrical Systems were in good working order prior to the accident.\nThe position in which the appellant found himself was not the result of a Mechanical fault. The evidence does not indicate that the road was slippery at the time.\nCounsel for the A', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ppellant urged it upon this court that the point of impact is not a determining factor in deciding the issue of carelessness.\nRather, the position of the law is that the point of impact alone, was not a proper yardstick for resolving issues of road traffic negligence, see HAUSA VS. THE REPUBLIC \\[1981\\] GLR 840 Twumasi J. (as he then was) in his book Criminal Law in Ghana p. 615 on police sketch of scene of accident, mentions the point of impact as one of the important positions for determining liability for negligent driving.\nThe trial court held that, it was a crucial factor in the determination of the case before it and found that the point of impact was in the lane of traffic of PW1.\nThe Appellant therefore is to be blamed for driving into the lane of traffic of PW1 as there is no clear evidence that PW1 who was in his lane, had ample means and opportunity to prevent the accident.\nThe case of OWUSU VRS. COMMISSIONER OF POLICE \\[1963\\] 1 GLR p.113 is rather not in favour of the Appellant.\nUnder Cross-examination, he told the court that he did not even see PW1’s Car ahead of him. In his statement he said he saw a vehicle overtaking PW1’s Car ahead of him. Where he cannot even be sure whether he saw PW1’s Car or not, one can safely say that the Appellant did not drive his vehicle with due care and attention.\nThe Appellate Tribunal evaluated the evidence on record and came to the conclusion that the findings made by the trial Tribunal are supported by the evidence. This court cannot therefore disturb that finding.\nIndeed in this appeal the Chief State Attorney submitted that the Judgment of the Regional Tribunal is supported by the record and called upon the Court to dismiss the appeal.\nI will not agree with counsel for the Appellant that the Judgment of the Regional Tribunal is erroneous as same is not based on proper evaluation and resolution of the facts in issues.\nThe finding that the Appellant became confused and panicky, and that this caused the accident, I must admit is not borne out by the evidence.\nIn this appeal, counsel for the Appellant said nothing about the second count of Negligently causing Harm, which flows directly from the first count. Its fate depends upon the success or failure of the conviction against the first count as a result of which the person named in the charge sheet in the second count sustained the injury.\nHaving found that the Appellant drove his vehicle without due care and attention, he must be held liable for Negligently causing Harm to the person named in the second count.\nOn the totality of the evidence, the appeal against conviction fails and same is hereby dismissed.\nR. C. OWUSU (MS)\nJUSTICE OF APPEAL\nWOOD, JA:\nI agree.\nG. T. WOOD (MRS.)\nJUSTICE OF APPEAL\nGBADEGBE, JA:\nI also agree.\nN. S. GBADEGBE\nJUSTICE OF APPEAL', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}]}
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:03:23] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.021s]
+INFO:root:Question: What is the name of the plaintiff?, Results: {'question': 'What is the name of the plaintiff?', 'answers': [{'passage': 'JUDGMENT\nR.C. OWUSU, JA:\nThis is an appeal against the Judgment of His Lordship Nana Barfour Adjei (Chairman) sitting with Messrs Eric Wood and George Amissah, Miss Cobbah-Yalley and Florence Dadzie as panel members delivered on 15/11/2001 at the Regional Tribunal Cape Coast.\nThe appellant herein had been charge on two counts of careless driving contrary to Sec. 18(1) of R.T.O. 55/52 as amended by section 4 of Act 553 of 1998 and Negligently causing Harm contrary to section 72 of the Criminal Code of 1960 (Act 29).\nHe was arraigned before the Community Tribunal, Elmina in the Central Region, tried and found guilty on both Counts. He was convicted on both counts and sentenced to a fine of \ufffd200,000.00 or 4 months I.H.L in default. He paid the fine.\nDissatisfied with the conviction and sentence however, he appealed to the Regional Tribunal, Cape Coast on the grounds that:\ni. “The Judgment is not supported by the evidence on record.\nii. The trial Court Erred in holding that the point of impact was in the lane of traffic of PW1.\niii. The trial court failed to appreciate the defence of the Accused.\niv. The trial court failed to adequately evaluate the evidence on record.\nv. The trial court failed to consider the fact that the 3rd party by driving into the lane of the Accused at a short distance placed the Accused in extreme peril and that which the Accused did or omitted to do in the agony of the moment cannot fairly be treated as negligence.\nvi. The reasons adduced by the trial court for the rejection of the evidence of Dw1 are untenable in law.\nvii. The trial court erred palpably in holding that the duty of avoidance of collision was on the Accused and not the third party vehicle which was doing the overtaking.\nviii. The court failed to appreciate the burden of proof placed on the prosecution and thereby erroneously shifted that burden onto the accused to prove his innocence.\nix. The trial court failed to consider the issues raised in the address submitted by counsel on behalf of the accused.\nx. Additional grounds of appeal will be filed upon receipt of the record of appeal.\nHis appeal was disallowed by the Regional Tribunal. It is against the decision of the Regional Tribunal that he has appealed to this court on the grounds that:—\n1\\. “ The tribunal failed to critically evaluate the evidence.\n2\\. The tribunal Erred in dismissing the Appeal.\n3\\. The tribunal Erred in holding that the appellant was negligent.\n4\\. The finding by the tribunal that the Appellant was confused and panicky and this caused the accident is not borne out by the evidence on record.\n5\\. The Judgment was erroneous and not the result of proper resolution of the facts in issue since the tribunal failed to consider the several facts which were in favour of the appellant and which were suf', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ficient to exonerate him from the charge.\nThe facts of the case as alleged by the prosecution are that on 18/1/2001 at about 7.15 p.m, the appellant herein, Joseph Donkor of Union Transport Africa Ltd, Takoradi drove Scania Cement Articulated Tanker No. GT 7086 A loaded with cement from Takoradi to Acheampong near Tarkwa. Between Bronyibima and Yesumkwa along Cape Coast-Takoradi Road, accused drove into the lane of an on coming Mercedes Benz Car No. GW 2686 Q then being driven by one Michael Hackenberg, General Manager Construction pioneers (CP) and hit the Benz car which caught fire and burnt completely.\nOne Doctor Spark who was with the driver on the Mercedes Benz sustained injuries. According to PW1, who was driving the Mercedes Benz Car, the Appellant tried to avoid hitting him in his lane so he swerved into his (Appellant’s) lane again but the Trailer of his truck fell down and hit his car in his lane.\nThe fact that the Articulated Truck was driven into the lane of the Mercedes Benz was denied by the defence which contended that it was rather the driver of the Mercedes Benz who drove into the lane of the Truck.\nCounsel for the Appellant at the hearing of the appeal, abandoned ground 2 of the appeal.\nGrounds 1, 3 and 5 were argued together. Counsel submitted that the findings made by the court cannot be supported by the evidence.\nThe Appellate tribunal dismissed the Appellant’s appeal because, as the Judgment of the Tribunal reads “We cannot agree more with the lower court in its observation above. We therefore hold that the trial court was right in its Judgment and we have no just cause to disturb it, the findings made by the trial court were supported by the evidence.”\nThe trial court had found the appellant “negligent and careless”. That “he refused to keep a proper look out and in his own words, he never saw PW1’s Benz Car”.\nCounsel had seriously argued before this court that the appellant was not careless and that what he did when confronted with imminent danger was reasonably necessary in the circumstances and cannot amount to negligence.\nHe referred the Court to the case of ASIBI (HAUSA) VRS FRANCIS EFFAH, Court of Appeal, Civil Appeal NO. 33/69 of 26th February 1970 (unreported) referred to by P. K. Twumasi in his Criminal Law in Ghana p. 606.\nCounsel submitted that the appellant was faced with imminent danger of running into the Toyota Land Cruiser which had overtaken another vehicle and had found itself in his lane. He applied his brakes to avoid fatalities.\nAccording to the appellant himself this was when he got out of a curve. The legal position is that where a person is confronted with an emergency he cannot be expected to conduct himself in a way a reasonable and prudent man would do in ordinary Circumstances. His blameworthiness must ', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'be Judged by the peculiar and unusual situation.\nSee the case of LONDON PASSENGER TRANSPORT BOARD VRS. UPSON \\[1949\\] A.C. 155, referred to in Twumasi’s Criminal Law in Ghana p.606.\nAttached to this principle is a rider that where, however, the emergency was created by an earlier act of negligence by the person concerned he cannot escape liability for the consequences of the situation he created by his own negligent act. So in this case, was the situation in which the appellant found himself brought about by an earlier act of carelessness on his part?\nAccording to the appellant himself, he had finished negotiating a curve on the road. The accident had happened late in the evening, about 7.15 p.m. and visibility was poor. PW2 told the trial court that he could not take measurements that night because of visibility.\nFrom the sketch of the scene of accident, Exh “A”, the distance between where the appellant sighted vehicle No 2686Q to the point of impact measured 205”. The appellant did sign the sketch by way of approval in the presence of an independent witness. At the trial, even though he did not object to the tendering of the sketch in evidence, he denied that the point of impact as indicated on the sketch was the actual point of impact. He told the Court the point of impact was in his lane of traffic but not in the lane of traffic of PW1 as indicated on the sketch.\nHis denial per se, did not render the sketch inadmissible as contended by Counsel in the trial court. The appellant did not raise any objection to the tendering of the statement. Even if he had raised an objection, its admissibility like a confession statement would have been decided on evidence only where the appellant had denied signing the sketch or that he had signed under duress. Where the objection is raised on the ground of inaccuracy, it must first be admitted before it can be evaluated. The weight to be attached to it is a question of fact. See the case of ASARE alias FANTI VRS THE STATE \\[1964\\] GLR 70. The appellant did not object to the distance between where he sighted PW1’s vehicle and where the two vehicles collided whether in his lane of traffic or that of the other vehicle.\nAs to the lane of traffic in which the vehicle collided, the appellant in his own statement told the police it was in PW1’s lane. This was the statement taken a day after the accident. 10 days later, on 29/3/2001 when given the opportunity to make another statement, he relied on his former statement made on 19/3/2001. Counsel urged it upon this court not to attach any weight to the statement because the appellant was remanded in custody and had been denied medical care on the day of the accident and that the statement was taken the next morning.\nI find this submission strange because one would have thoug', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ht that having slept over night, the Appellant rather would have reflected on the events leading to the accident and would remember correctly how and where the accident happened. If what he had told the police in that statement was not correct, he had another opportunity on which he could have changed same.\nLike the sketch, the statement was tendered without objection and the contents were not denied. The weight to be attached to it was a question of fact for the trial court. I therefore see no reason why this court should be called upon not to attach any weight to it, a duty reserved for the trial court which had evaluated the statement.\nUnder Cross-examination, the Appellant was asked the following questions:\nQ. “What time after the accident did you make your statement to the police”.\nA. “After the Police went to take measurement the next day."\nQ. “so the statement you gave the police and what you are saying now, which one is correct?"\nA. “what I am saying now is correct.”\nQ. “so what ever you told the police is not correct, it is a lie, I mean your statement?”\nA. “I spoke the truth to the police.”\nHe did not at the trial say that he pointed at a different point of impact which the investigating officer had ignored in the sketch.\nThe Appellant’s vehicle was a Scania Cement Bulk Tanker which at the time of the accident was loaded with cement. With the size of the vehicle and the load, the Appellant was under a duty to exercise a greater degree of care and attention a prudent and reasonable driver would do especially while negotiating a curve. If he had driven his vehicle with due care and attention required of him, he could have avoided the accident from the distance of 205 feet from where he first sighted the Mercedes Benz Car.\nAt a speed of 97 k.m.p.h., under the High way Code, a driver should be able to brake from a distance of 180", from where he first sights an on coming vehicle ….\nEven driving at that speed would not be reasonable under the circumstances having regard to the size of the vehicle with the load, that portion of the road where the accident happened and the time of the day. I am very mindful of the fact that speed per se is not evidence of carelessness or negligence but from the appellant’s own evidence, when he applied his brake, he lost control of it and his vehicle started swerving from one lane to the other.\nAccording to the report of the officer in charge of Vehicle Examination and Licensing Department who tested the Appellant’s vehicle after the accident, the brakes, steering and the Electrical Systems were in good working order prior to the accident.\nThe position in which the appellant found himself was not the result of a Mechanical fault. The evidence does not indicate that the road was slippery at the time.\nCounsel for the A', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}, {'passage': 'ppellant urged it upon this court that the point of impact is not a determining factor in deciding the issue of carelessness.\nRather, the position of the law is that the point of impact alone, was not a proper yardstick for resolving issues of road traffic negligence, see HAUSA VS. THE REPUBLIC \\[1981\\] GLR 840 Twumasi J. (as he then was) in his book Criminal Law in Ghana p. 615 on police sketch of scene of accident, mentions the point of impact as one of the important positions for determining liability for negligent driving.\nThe trial court held that, it was a crucial factor in the determination of the case before it and found that the point of impact was in the lane of traffic of PW1.\nThe Appellant therefore is to be blamed for driving into the lane of traffic of PW1 as there is no clear evidence that PW1 who was in his lane, had ample means and opportunity to prevent the accident.\nThe case of OWUSU VRS. COMMISSIONER OF POLICE \\[1963\\] 1 GLR p.113 is rather not in favour of the Appellant.\nUnder Cross-examination, he told the court that he did not even see PW1’s Car ahead of him. In his statement he said he saw a vehicle overtaking PW1’s Car ahead of him. Where he cannot even be sure whether he saw PW1’s Car or not, one can safely say that the Appellant did not drive his vehicle with due care and attention.\nThe Appellate Tribunal evaluated the evidence on record and came to the conclusion that the findings made by the trial Tribunal are supported by the evidence. This court cannot therefore disturb that finding.\nIndeed in this appeal the Chief State Attorney submitted that the Judgment of the Regional Tribunal is supported by the record and called upon the Court to dismiss the appeal.\nI will not agree with counsel for the Appellant that the Judgment of the Regional Tribunal is erroneous as same is not based on proper evaluation and resolution of the facts in issues.\nThe finding that the Appellant became confused and panicky, and that this caused the accident, I must admit is not borne out by the evidence.\nIn this appeal, counsel for the Appellant said nothing about the second count of Negligently causing Harm, which flows directly from the first count. Its fate depends upon the success or failure of the conviction against the first count as a result of which the person named in the charge sheet in the second count sustained the injury.\nHaving found that the Appellant drove his vehicle without due care and attention, he must be held liable for Negligently causing Harm to the person named in the second count.\nOn the totality of the evidence, the appeal against conviction fails and same is hereby dismissed.\nR. C. OWUSU (MS)\nJUSTICE OF APPEAL\nWOOD, JA:\nI agree.\nG. T. WOOD (MRS.)\nJUSTICE OF APPEAL\nGBADEGBE, JA:\nI also agree.\nN. S. GBADEGBE\nJUSTICE OF APPEAL', 'score': 1.0, 'metadata': "{'booksReferredTo': [], 'caseId': {'number': None, 'type': None}, 'casesReferredTo': [], 'combinedCounsel': ['JOHN MERCER FOR THE APPELLANT', 'AGBOLOSOO FOR THE RESPONDENT'], 'combinedParties': ['JOSEPH DONKOR v. THE REPUBLIC'], 'counsel': {'Plaintiff/Appellant': ['JOHN MERCER'], 'Defendant/Respondent': ['AGBOLOSOO']}, 'court': {'location': {'city': 'ACCRA', 'country': 'GHANA'}, 'name': None}, 'editorialNote': None, 'headNotes': None, 'indices': [], 'judgement': {'date': '2002-03-13T00:00:00.000Z', 'year': 2002, 'month': 'March', 'day': 13}, 'judges': [], 'lawReportsCitations': [], 'mediaNeutralCitation': None, 'natureOfProceedings': None, 'partiesOfSuit': {'Plaintiff/Appellant': ['JOSEPH DONKOR'], 'Defendant/Respondent': ['THE REPUBLIC']}, 'presidingJudge': 'OWUSU ANSAH (MS), JA', 'source': 'elibrary.jsg.gov.gh', 'sourceFile': '\\\\original_source_files\\\\Cases from 1993 - 2014\\\\2000\\\\COURT OF APPEAL\\\\JOSEPH DONKOR v. THE REPUBLIC.htm', 'statutesReferredTo': [], 'title': {'long': 'JOSEPH DONKOR v. THE REPUBLIC', 'short': 'JOSEPH DONKOR vs THE REPUBLIC'}}"}]}
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:03:36] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:9200
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.062s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:07:59] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:9200
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.185s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:20:09] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.019s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:20:36] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.022s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 12:20:58] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.019s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 13:18:58] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.343s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 13:51:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:38:18] "[31m[1mGET / HTTP/1.1[0m" 405 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.046s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:41:37] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.017s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:41:39] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.024s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:00] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.027s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:17] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:23] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.023s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:24] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.017s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:45:26] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.021s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:36] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:46] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.023s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:47:50] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.018s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:48:37] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 15:48:49] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 63, in index_documents
+    passages = extract_passages(text_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 9, in extract_passages
+    content = uploaded_file.getvalue().decode('utf-8')
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'getvalue'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:22:07] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    passages = extract_passages(text_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 9, in extract_passages
+    content = uploaded_file.getvalue().decode('utf-8')
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'getvalue'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:26:43] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:28:27] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:01] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:26] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:29:47] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 64, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 38, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:31:26] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:32:49] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:33:16] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /index [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\app.py", line 65, in index_documents
+    metadata = extract_metadata(metadata_content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\app\parsing.py", line 37, in extract_metadata
+    metadata = json.load(uploaded_metadata)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kyle\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+                 ^^^^^^^
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:34:35] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:39:56] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:41:19] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:44:36] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:45:00] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:46:43] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:50:02] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:50:55] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:52:56] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:56:52] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:57:37] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 16:59:37] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:00:00] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:02:20] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:04:29] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+ERROR:root:Error during indexing: expected string or bytes-like object, got 'FileStorage'
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:08:23] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:11:22] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.862s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:26:08] "POST /index HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.036s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:45:34] "POST /index HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.058s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 17:59:11] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.328s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:02:34] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.030s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:04:03] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.114s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:09:39] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.034s]
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2023 18:09:40] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.027s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:51:31] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.054s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:51:53] "POST / HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.021s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:51:54] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.087s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:52:14] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.019s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:52:18] "POST / HTTP/1.1" 200 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.073s]
+ERROR:root:Error during indexing: expected str, bytes or os.PathLike object, not writer
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:52:27] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.032s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 13:52:31] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "HEAD /legal_passages HTTP/1.1" 200 0
+INFO:elastic_transport.transport:HEAD http://localhost:9200/legal_passages [status:200 duration:0.064s]
+ERROR:root:Error during indexing: expected str, bytes or os.PathLike object, not writer
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 15:40:09] "[35m[1mPOST /index HTTP/1.1[0m" 500 -
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:0.037s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 15:40:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:9200
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.068s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x00000181308C8410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (3): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.088s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x000001813071CE10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (4): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.044s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x0000018130DBEE90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+INFO:elastic_transport.node_pool:Resurrected node <Urllib3HttpNode(http://localhost:9200)> (force=False)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (5): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.048s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x0000018130DBFB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+INFO:elastic_transport.node_pool:Resurrected node <Urllib3HttpNode(http://localhost:9200)> (force=False)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (6): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.066s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 5 times in a row, putting on 16 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x0000018130D9AD90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+INFO:elastic_transport.node_pool:Resurrected node <Urllib3HttpNode(http://localhost:9200)> (force=False)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (7): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.067s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 6 times in a row, putting on 30 second timeout
+WARNING:elastic_transport.transport:Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x0000018130D9B6D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (8): localhost:9200
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.086s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 7 times in a row, putting on 30 second timeout
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\docker\app.py", line 36, in get_question
+    results = document_retrieval(question)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\docker\retrieval.py", line 36, in document_retrieval
+    response = es.search(index=INDEX_NAME)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3924, in search
+    return self.perform_request(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\_base.py", line 285, in perform_request
+    meta, resp_body = self.transport.perform_request(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x00000181308C8410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it))
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 18:34:29] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:N/A duration:4.091s]
+WARNING:elastic_transport.node_pool:Node <Urllib3HttpNode(http://localhost:9200)> has failed for 8 times in a row, putting on 30 second timeout
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\docker\app.py", line 36, in get_question
+    results = document_retrieval(question)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\docker\retrieval.py", line 36, in document_retrieval
+    response = es.search(index=INDEX_NAME)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3924, in search
+    return self.perform_request(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elasticsearch\_sync\client\_base.py", line 285, in perform_request
+    meta, resp_body = self.transport.perform_request(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_transport.py", line 328, in perform_request
+    meta, raw_data = node.perform_request(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\question_answering\qa_env\Lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 197, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x000001813071CE10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it))
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 18:34:29] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device: cpu
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:9200
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:9200
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:http://localhost:9200 "POST /legal_passages/_search HTTP/1.1" 200 None
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:1.365s]
+INFO:elastic_transport.transport:POST http://localhost:9200/legal_passages/_search [status:200 duration:1.378s]
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 18:41:15] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Oct/2023 18:41:15] "POST / HTTP/1.1" 200 -

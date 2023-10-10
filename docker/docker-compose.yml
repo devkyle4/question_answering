@@ -1,22 +1,40 @@
-version: '3'
+version: '3.8'
 services:
-  flask:
-    build:
-      context: .
-      dockerfile: Dockerfile-flask
-    ports:
-      - "5000:5000"
-  streamlit:
-    build:
-      context: .
-      dockerfile: Dockerfile-streamlit
-    ports:
-      - "8501:8501"
-    
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
     container_name: elasticsearch
     environment:
       - discovery.type=single-node
     ports:
-      - "9200:9200"
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - "es-data:/elasticsearch/data"
+    restart: always
+#    healthcheck:
+#      test: [ "CMD", "curl", "--fail", "http://elastic:9200/_cat/health" ]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 5
+
+
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile-flask
+    ports:
+      - 5000:5000
+    depends_on:
+      - elasticsearch  # Ensure that Elasticsearch starts before Flask
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile-streamlit
+    ports:
+      - 8501:8501
+    depends_on:
+      - flask  # Ensure that Flask starts before Streamlit
+
+volumes:
+  es-data:
