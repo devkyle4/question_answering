@@ -120,9 +120,3 @@ def compute_accuracies(filename):
 
     return top1_accuracy, top3_accuracy
 
-
-# FILENAME = '../docs/evaluation_rated.csv'
-# # docs/evaluation_rated.csv
-# print(compute_accuracies(FILENAME))
-print(document_retrieval('what is the name of the plaintiff?'))
-# print(evaluation('../docs/user_queries.txt', FILENAME))
