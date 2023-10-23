@@ -1,40 +1,35 @@
 version: '3.8'
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
     container_name: elasticsearch
     environment:
       - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx1g
     ports:
       - 9200:9200
       - 9300:9300
+    restart: on-failure
     volumes:
-      - "es-data:/elasticsearch/data"
-    restart: always
-#    healthcheck:
-#      test: [ "CMD", "curl", "--fail", "http://elastic:9200/_cat/health" ]
-#      interval: 10s
-#      timeout: 5s
-#      retries: 5
-
+      - esdata:/usr/share/elasticsearch/data
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
 
   flask:
-    build:
-      context: .
-      dockerfile: Dockerfile-flask
+    image: devkyle4/docker-flask:version1
     ports:
       - 5000:5000
     depends_on:
-      - elasticsearch  # Ensure that Elasticsearch starts before Flask
+      - elasticsearch
 
   streamlit:
-    build:
-      context: .
-      dockerfile: Dockerfile-streamlit
+    image: devkyle4/docker-streamlit:version1
     ports:
       - 8501:8501
     depends_on:
-      - flask  # Ensure that Flask starts before Streamlit
+      - flask
 
 volumes:
-  es-data:
+  esdata:
