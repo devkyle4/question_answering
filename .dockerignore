@@ -1,0 +1,8 @@
+docs/
+*.log
+docs/
+venv/
+.git
+
+.gitignore
+ML_Coding_Challenge.pdf

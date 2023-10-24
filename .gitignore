@@ -1,0 +1,15 @@
+# Ignore compiled Python files
+*.pyc
+*.log
+.env
+__pycache__
+all-mpnet-base-v2
+qa_env
+# Ignore virtual environment directories
+
+docs/Corpus
+docs/Corpus-20230928T140604Z-001.zip
+
+
+README.md
+output.txt
